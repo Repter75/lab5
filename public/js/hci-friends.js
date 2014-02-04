@@ -3,6 +3,11 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+    
+    $(".nameLink").click(function (e) {
+        e.preventDefault();
+        $(this).text(anagrammedName($(this).text()));
+    });
 })
 
 /*
